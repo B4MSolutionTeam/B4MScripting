@@ -1,8 +1,5 @@
-import threading
 
-def test_thread(a):
-    a = a + 1
-    return a
-t1 = threading.Thread(target = test_thread,args=[1])
-t1.start()
-print(t1.join())
+import subprocess, sys
+
+p = subprocess.check_output("powershell -file C:/vdServerAchieve/sendmail.ps1", shell = True)
+print(p)
