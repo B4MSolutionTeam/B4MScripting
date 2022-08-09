@@ -4,9 +4,8 @@ import datetime
 import re
 import subprocess
 
-from requests import head
 backup_path = "C:/vdServerAchieve"
-factory_name = ["Bu, Ba"]
+factory_name = {"Ba":"Factory Bamberg", "Bu": "Factory Bursa"}
 
 def check_sub_folder(list_subfolder, temp_path):
     path_subfolder = ""
@@ -43,7 +42,8 @@ def general_check_sub_folder(path):
             list_path_subfolder_achieve, check = status_check(p)
             if check is False:
                 for path_check_version in list_path_subfolder_achieve:
-                    factory = (path_check_version.split("/"))[2]
+                    
+                    factory = factory_name[(path_check_version.split("/"))[2]]
                     HDEV6 = (path_check_version.split("/"))[3]
                     stage = (path_check_version.split("/"))[4]
                     production_line = (path_check_version.split("/"))[5]
@@ -79,4 +79,5 @@ for i in os.walk(backup_path):
             count_path = 0
             general_check_sub_folder(temp_path)
 create_report()
+send_mail()
 
