@@ -10,7 +10,7 @@
 #         print("There is error appear when the program is running, please check again")
 import PyInstaller.__main__
 PyInstaller.__main__.run([
-    'coursera.py',
+    'duplicate_version.py',
     '--onefile',
     '--windowed'
 ])

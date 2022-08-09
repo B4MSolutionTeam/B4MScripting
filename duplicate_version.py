@@ -72,7 +72,7 @@ def send_mail():
 backup_file_attribute_time = {}  
         
 for i in os.walk(backup_path):
-    if i[0].endswith("ARCHIVE") is True:
+    if i[0].endswith("ACHIEVE") is True:
         path_update = i[0].replace("\\","/") #replace special character 
         if len(i[1]) > 0: #check if sub folder of ARCHIVE are exist
             temp_path = [path_update]
