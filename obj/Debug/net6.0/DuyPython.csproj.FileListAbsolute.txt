@@ -1,0 +1,15 @@
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.csproj.AssemblyReference.cache
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.AssemblyInfoInputs.cache
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.AssemblyInfo.cs
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.csproj.CoreCompileInputs.cache
+C:\Users\TAD6HC\Desktop\DuyPython\bin\Debug\net6.0\DuyPython.exe
+C:\Users\TAD6HC\Desktop\DuyPython\bin\Debug\net6.0\DuyPython.deps.json
+C:\Users\TAD6HC\Desktop\DuyPython\bin\Debug\net6.0\DuyPython.runtimeconfig.json
+C:\Users\TAD6HC\Desktop\DuyPython\bin\Debug\net6.0\DuyPython.dll
+C:\Users\TAD6HC\Desktop\DuyPython\bin\Debug\net6.0\DuyPython.pdb
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.dll
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\refint\DuyPython.dll
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.pdb
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\DuyPython.genruntimeconfig.cache
+C:\Users\TAD6HC\Desktop\DuyPython\obj\Debug\net6.0\ref\DuyPython.dll

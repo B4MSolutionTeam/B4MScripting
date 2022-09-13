@@ -1,0 +1,48 @@
+
+<root>
+    <GeneralInformation>
+        <item display="User">SCD9NU5</item>
+        <item display="Timestamp">03.05.2022 10:22:36</item>
+        <item display="Jobname" id="4968">Image_Steuerungsrechner_Win7_Image</item>
+        <item display="Komponente" id="4950">\Ba\CRI2\99_unknown\02_09_Anker_messen\180\PC_unten\Image</item>
+        <item display="Benachrichtigung an" id="4951"></item>
+        <item display="Speicherstrategie" id="4952">Backup immer speichern (vorheriges Backup behalten, auch wenn gleich)</item>
+        <item display="Zeitplan" id="4955">Jede Woche am Di., um 11:30</item>
+        <item display="Bei Fehler" id="4956">Keine Aktion definiert</item>
+        <item display="Vergleichsstrategie" id="4958">Nicht vergleichen</item>
+        <item display="Upload Agent" id="4959"></item>
+        <item display="Compare Agent" id="4960"></item>
+        <item display="Anzahl der beibehaltenen Backups (Rollover)" id="4961">3</item>
+        <item display="Uploadtyp" id="4962">Disk image</item>
+        <item display="Ausgeführt durch" id="4970">Automatisch</item>
+        <item display="Warnen, wenn Backup älter ist als" id="4975">Nie warnen</item>
+        <item display="Benachrichtigen wenn" id="4981">Immer</item>
+        <item display="Erstelle Version wenn" id="4983">Nie</item>
+        <item display="Zusätzliche E-Mail-Adressen" id="4984"></item>
+    </GeneralInformation>
+    <SpecificInformation>
+        <item display="FTP-Server" id="5002"></item>
+        <item display="Benutzer" id="5003">de\bmb2ba</item>
+        <item display="Passwort" id="5004">******</item>
+        <item display="Port" id="5111">21</item>
+        <item display="Vergleicherkonfiguration" id="5911">&lt;Specs&gt;&lt;Spec FSpec=&quot;*.log&quot; CompareClass=&quot;ASCII&quot; Recursive=&quot;Y&quot; /&gt;&lt;/Specs&gt;</item>
+        <item display="Typ" id="36480">Drive Snapshot mit PsExec</item>
+        <item display="Laufwerk" id="36481">HD*:*</item>
+        <item display="Optionen" id="36482">-L10000</item>
+        <item display="Bandbreite (MB/s)" id="36483">0</item>
+        <item display="Dateien ausschließen" id="36484"></item>
+        <item display="Pfad" id="36485">\\10.16.193.18\cri-1-2\020_Anker\180_Mess_Ankerbolzen\1211273_unten_Messplatz</item>
+        <item display="Differentielle Images werden erstellt, bis das letzte volle Image älter ist als (Tage)" id="36486">30</item>
+        <item display="Typ" id="36487">Dateiablage</item>
+        <item display="Erstellte Images testen" id="36488">No</item>
+        <item display="Komponentenpfad dem Pfad hinzufügen" id="36489">No</item>
+        <item display="Differentielle Images erstellen" id="36490">No</item>
+        <item display="Gerät" id="36491">10.43.147.209</item>
+        <item display="Benutzer" id="36492">10.43.147.209\Administrator</item>
+        <item display="Passwort" id="36493">******</item>
+        <item display="Dateiname der Anwendung" id="36496">PsExec_198.exe</item>
+        <item display="Optionen" id="36497">-accepteula</item>
+        <item display="Komponenten-ID dem Pfad hinzufügen" id="36530">No</item>
+    </SpecificInformation>
+    <InternalInformation>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</InternalInformation>
+</root>

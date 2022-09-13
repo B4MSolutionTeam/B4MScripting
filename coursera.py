@@ -1,16 +1,19 @@
+import csv
+import subprocess
+import json
 import PyInstaller.__main__
 
 PyInstaller.__main__.run([
-    'duplicate_version.py',
+    'send_mail_report.py',
     '--onefile',
     '--windowed'
 ])
-
-# from email.mime.text import MIMEText
-# import smtplib
-# from email.mime.multipart import MIMEMultipart
-# from email.mime.base import MIMEBase
-# from email import encoders
+# # send_mail_report.py, duplicate_version.py,routine.py
+# # from email.mime.text import MIMEText
+# # import smtplib
+# # from email.mime.multipart import MIMEMultipart
+# # from email.mime.base import MIMEBase
+# # from email import encoders
 
 
 # SUBJECT = "Backup Version Overdate 10 year"
