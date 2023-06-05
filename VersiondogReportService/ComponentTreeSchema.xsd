@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="node">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="component" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="D1" type="xs:string" />
+                  <xs:attribute name="D2" type="xs:string" />
+                  <xs:attribute name="D3" type="xs:string" />
+                  <xs:attribute name="D4" type="xs:string" />
+                  <xs:attribute name="D5" type="xs:string" />
+                  <xs:attribute name="D6" type="xs:string" />
+                  <xs:attribute name="D7" type="xs:string" />
+                  <xs:attribute name="D8" type="xs:string" />
+                  <xs:attribute name="D9" type="xs:string" />
+                  <xs:attribute name="D10" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Versions" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Version" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Tags" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Tag" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Number" type="xs:string" />
+                        <xs:attribute name="Id" type="xs:string" />
+                        <xs:attribute name="TimeStamp" type="xs:string" />
+                        <xs:attribute name="UserDefined" type="xs:string" />
+                        <xs:attribute name="UserId" type="xs:string" />
+                        <xs:attribute name="UserName" type="xs:string" />
+                        <xs:attribute name="ComputerName" type="xs:string" />
+                        <xs:attribute name="Comment" type="xs:string" />
+                        <xs:attribute name="ChangeReason" type="xs:string" />
+                        <xs:attribute name="SubDirArchive" type="xs:string" />
+                        <xs:attribute name="StateArchive" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="Path" type="xs:string" />
+            <xs:attribute name="Id" type="xs:string" />
+            <xs:attribute name="TypeId" type="xs:string" />
+            <xs:attribute name="State" type="xs:string" />
+            <xs:attribute name="MultiEdit" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="node" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="node" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="Timestamp" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="node" />
+        <xs:element ref="root" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

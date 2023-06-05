@@ -1,0 +1,5 @@
+# comment in file yaml
+microservice: #object
+  - app: 'duy' # - list 
+    port: 9090 # key value
+    

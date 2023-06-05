@@ -1,0 +1,5 @@
+VDogAutoexportPath=D:\vdClient\vdogautoexport.exe
+VDogClientArchivPath=D:\vdCA
+ExportRootPath=D:\Shares\vDogReports\AutoImport
+OrdersPathJobs
+OrdersPathComponentTree

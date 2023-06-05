@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersiondogReportService", "VersiondogReportService\VersiondogReportService.csproj", "{CBDD22E0-6C48-41D2-9C19-1E0B01C9EA68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBDD22E0-6C48-41D2-9C19-1E0B01C9EA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDD22E0-6C48-41D2-9C19-1E0B01C9EA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDD22E0-6C48-41D2-9C19-1E0B01C9EA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDD22E0-6C48-41D2-9C19-1E0B01C9EA68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66B9A868-7CC8-4C5F-85C6-9CCB4CA7AC2D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rb-msvs-alm.de.bosch.com/tfs/col-baptef_tefmit
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VersiondogReportService\\VersiondogReportService.csproj
+		SccProjectName1 = VersiondogReportService
+		SccLocalPath1 = VersiondogReportService
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+{
+    "data":  [
+                 {
+                     "provider_name":  "Bulk01$",
+                     "drive_path":  "\\BA00FB02.DE.BOSCH.COM\\Bulk01$",
+                     "disk_info_alert":  [
+
+                                         ]
+                 },
+                 {
+                     "provider_name":  "Bulk02$",
+                     "drive_path":  "\\BA00FB02.DE.BOSCH.COM\\Bulk02$",
+                     "disk_info_alert":  [
+
+                                         ]
+                 }
+             ]
+}

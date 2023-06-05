@@ -1,0 +1,1 @@
+Copy-Item \\hc10fs02.apac.bosch.com\TAD6HC$\pki_data\duy.txt -Destination "D:\vdSA\Report_Daily"

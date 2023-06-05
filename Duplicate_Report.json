@@ -1,0 +1,25 @@
+{
+    "list_duplicate": [
+        {
+            "path": "//ba0vm061.de.bosch.com/duy/10_Load/SL01/010/ARCHIVE/E-Plan_M4896/20200325.000/Archive.zip",
+            "dup_path": [
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/010/ARCHIVE/E-Plan_M4896/20211115.000/Archive.zip",
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/010/ARCHIVE/E-Plan_M4896/20221215.000/Archive.zip"
+            ]
+        },
+        {
+            "path": "//ba0vm061.de.bosch.com/duy/10_Load/SL01/015/ARCHIVE/E-Plan_M4897/20200325.000/Archive.zip",
+            "dup_path": [
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/015/ARCHIVE/E-Plan_M4897/20211115.000/Archive.zip",
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/015/ARCHIVE/E-Plan_M4897/20211116.000/Archive.zip",
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/015/ARCHIVE/E-Plan_M4897/20211117.000/Archive.zip"
+            ]
+        },
+        {
+            "path": "//ba0vm061.de.bosch.com/duy/10_Load/SL01/020/OPCON_000A620/ARCHIVE/PLC/20180828.000/Archive.zip",
+            "dup_path": [
+                "//ba0vm061.de.bosch.com/duy/10_Load/SL01/020/OPCON_000A620/ARCHIVE/PLC/20180828.001/Archive.zip"
+            ]
+        }
+    ]
+}

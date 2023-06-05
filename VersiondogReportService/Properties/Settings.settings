@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VersiondogReportService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Datenbank_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B4M</Value>
+    </Setting>
+    <Setting Name="Datenbank_Passwort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Tb%-3jR7bs$kds9kgKhds087</Value>
+    </Setting>
+    <Setting Name="Datenbank_Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rb0orarac35.de.bosch.com</Value>
+    </Setting>
+    <Setting Name="Datenbank_Tabelle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T_VERSIONDOGREPORTING</Value>
+    </Setting>
+    <Setting Name="Export_Ordnerpfade" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\BA0vm060\vDogReports$\AutoImport:5:BaP:false;\\BU4PTEFAPP04.emea.bosch.com\vDogReports\AutoImport:4:BuP:false;\\chvmhdev6vd.us.bosch.com\vDogReports\AutoImport:4:ChP:false;\\bljvm120.emea.bosch.com\vDogReports\AutoImport:5:BljP:false;\\ad0vmvrsndog.us.bosch.com\vDogReports\AutoImport:5:AnP:false;\\fe0vm03418.de.bosch.com\vDogReports$\AutoImport:5:FeP:false</Value>
+    </Setting>
+    <Setting Name="Timer_Tick" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3600000</Value>
+    </Setting>
+    <Setting Name="Datenbank_SID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ASS1368_rb0orarac35.de.bosch.com</Value>
+    </Setting>
+    <Setting Name="Datenbank_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">38000</Value>
+    </Setting>
+    <Setting Name="Datenbank_reference_Tabelle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T_VERSIONDOG_REFERENCLINES</Value>
+    </Setting>
+    <Setting Name="Datenbank_Zuweisung" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T_VDOGZUWEISUNG</Value>
+    </Setting>
+    <Setting Name="XmlSchemaFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\VersiondogReportingServiceOracle\VersiondogReportService\bin\Debug\ComponentTreeSchema.xsd</Value>
+    </Setting>
+    <Setting Name="XmlSchemaFile_UpperCase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\VersiondogReportingServiceOracle\VersiondogReportService\bin\Debug\ComponentTreeSchema_new.xsd</Value>
+    </Setting>
+    <Setting Name="Datenbank_Tabelle_Zuweisung" Type="System.String" Scope="User">
+      <Value Profile="(Default)">T_VDOGZUWEISUNG</Value>
+    </Setting>
+    <Setting Name="Export_Componenten_Ordnerpfad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ba0vm060\vDogReports$</Value>
+    </Setting>
+    <Setting Name="Csv_DateTime_Columns" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LASTCHECK;NEXTSTART;JOBSTART;JOBFINISH;TIMESTAMPBACKUP;TIMESTAMPPREBACKUP</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
