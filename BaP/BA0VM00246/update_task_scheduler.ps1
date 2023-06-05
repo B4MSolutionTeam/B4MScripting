@@ -1,1 +1,4 @@
-schtasks.exe /change /tn "test" /u APAC\BMT8HC /p "h0B5uL851Vz3"
+. "D:\Automation_Task\get_pam_password.ps1"
+$password_pam = Get-PAMPassword
+
+schtasks /change /tn "Automation Task\Chart Splunk Report Daily" /ru APAC\BMT8HC /rp $password_pam

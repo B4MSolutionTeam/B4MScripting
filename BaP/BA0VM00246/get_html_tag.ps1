@@ -76,6 +76,10 @@ function email_content
         $table_content
     </table>
 "@
+    foreach($png_file in $list_png)
+    {
+        Remove-Item $png_file
+    }
     return $email_string 
 }
 function send_mail_total
@@ -89,8 +93,8 @@ function send_mail_total
     $Message = New-Object System.Net.Mail.MailMessage
 
     $Message.From = "team.b4moperation@vn.bosch.com"
-    $Message.To.Add("duy.tathai@vn.bosch.com")
-    # $Message.To.Add("Hc1_CI_B4M_OperationProject@bcn.bosch.com")
+    # $Message.To.Add("duy.tathai@vn.bosch.com")
+    $Message.To.Add("Hc1_CI_B4M_OperationProject@bcn.bosch.com")
     
 
     $Message.IsBodyHtml = $true
@@ -106,3 +110,8 @@ function send_mail_total
 $password_pam = Get-PAMPassword
 $return_value = email_content -path_report "D:\Automation_Task_Report_File" -path_server "D:\Automation_Task\duy.txt"
 send_mail_total -password $password_pam -email_content $return_value
+
+foreach($html_file in $list_html)
+{
+    Remove-Item -Path $html_file
+}
