@@ -129,7 +129,7 @@ $Credential = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 # }
 # $certificate_properties = Get-ChildItem -Path "Cert:\LocalMachine\My\"
 
-Invoke-Command -ComputerName "BA0VM060.de.bosch.com" -ScriptBlock {[System.Net.Dns]::GetHostByName($env:computerName).HostName} -Credential $Credential
+# Invoke-Command -ComputerName "BA0VM060.de.bosch.com" -ScriptBlock {[System.Net.Dns]::GetHostByName($env:computerName).HostName} -Credential $Credential
 
 # $csv_content = Import-Csv -Path "\\ba00fb02.de.bosch.com\B4M\Automation\Automation_Script\Thumbprint_Server.csv"
 # $server_name = "BA0VM153.de.bosch.com"
@@ -141,3 +141,10 @@ Invoke-Command -ComputerName "BA0VM060.de.bosch.com" -ScriptBlock {[System.Net.D
 #     }
 # }
 
+# Write-Host($([System.Net.Dns]::GetHostName()))]\
+# Test-Connection -ComputerName "" -
+Invoke-Sqlcmd -ServerInstance "" -Database "" -Username "MAE_CM_INTERFACE" -Password -Query ""
+
+$json_string = (Get-Content -Path "C:\Users\TAD6HC\Desktop\DuyPython\thu.json") | ConvertFrom-Json
+
+Write-Host $json_string.Common.DB.DBServer
