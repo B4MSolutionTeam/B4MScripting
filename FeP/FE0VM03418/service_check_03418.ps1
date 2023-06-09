@@ -5,6 +5,8 @@ $serviceinfo = @{}
 $servicestatus = ""
 $get_date = Get-Date -UFormat "%d/%m/%Y"
 
+
+$path_bulk = "\\ba00fb02.de.bosch.com\B4M\Automation\Automation_Script_Report_File"
 function check_service_start()
 {
     param(
@@ -58,7 +60,7 @@ function create_report_file()
     $service.Add("service_status", "$check_service_status_return")
     $json_report_file["data"].Add("service",$service)
 
-    $path_json = "D:\Automation_Task_Report_File\report_2_03418.json"
+    $path_json = "D:\Automation_Task_Report_File\report_2_$([System.Net.Dns]::GetHostName()).json"
 
     if ((Test-Path -Path $path_json -PathType Leaf) -eq $false)
     {
@@ -72,7 +74,19 @@ function create_report_file()
         $test = Get-Content -Path $path_json
         Write-Host $test
     }
-    
+    Copy_To_Bulk -path_bulk $path_bulk -path_json $path_json
 }
+function Copy_To_Bulk 
+{
+    param(
+        $path_bulk, $path_json
+    )
+    . "D:\Automation_Task_Script\get_pam_password.ps1"
+    $password_pam = Get-PAMPassword
 
+    net use $path_bulk /u:APAC\BMT8HC $password_pam
+    Copy-Item -Path $path_json -Destination $path_bulk
+    net use $path_bulk /delete
+
+}
 create_report_file -service_name $servicename

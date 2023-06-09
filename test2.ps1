@@ -100,6 +100,44 @@ $Credential = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 #     $smtp.send($Message)
 # }
 
+# $list_Group = @("idm2bcd_B4M_App_Admin_BaP","idm2bcd_B4M_App_ControlCenter-Local_BaP","idm2bcd_B4M_Function_ComponentEditor_BaP","idm2bcd_B4M_Function_EventLog_BaP","idm2bcd_B4M_Function_Jobs_BaP","idm2bcd_B4M_Function_Script_BaP","idm2bcd_B4M_MAE-Support_ATMO_BaP","idm2bcd_B4M_MAE-Support_Atrotech_BaP","idm2bcd_B4M_MAE-Support_AuH_BaP","idm2bcd_B4M_MAE-Support_BCI_BaP","idm2bcd_B4M_MAE-Support_FCM_BaP","idm2bcd_B4M_MAE-Support_Gluth_BaP","idm2bcd_B4M_MAE-Support_Ruhlamat_BaP","idm2bcd_B4M_MAE-Support_Silberhorn_BaP","idm2bcd_B4M_MAE-Support_Strama_BaP","idm2bcd_B4M_MAE-Support_TEF1_BaP","idm2bcd_B4M_MAE-Support_TEF2_BaP","idm2bcd_B4M_MAE_Owner_BaP_Actuator_LV1","idm2bcd_B4M_MAE_Owner_BaP_Actuator_LV2","idm2bcd_B4M_MAE_Owner_BaP_CRI2_LV1","idm2bcd_B4M_MAE_Owner_BaP_CRI2_LV2","idm2bcd_B4M_MAE_Owner_BaP_CRI3_LV1","idm2bcd_B4M_MAE_Owner_BaP_CRI3_LV2","idm2bcd_B4M_MAE_Owner_BaP_DLL_LV1","idm2bcd_B4M_MAE_Owner_BaP_DLL_LV2","idm2bcd_B4M_MAE_Owner_BaP_EIC_LV1","idm2bcd_B4M_MAE_Owner_BaP_EIC_LV2","idm2bcd_B4M_MAE_Owner_BaP_EV_LV1","idm2bcd_B4M_MAE_Owner_BaP_EV_LV2","idm2bcd_B4M_MAE_Owner_BaP_FCEV_LV1","idm2bcd_B4M_MAE_Owner_BaP_FCEV_LV2","idm2bcd_B4M_MAE_Owner_BaP_FCM_LV1","idm2bcd_B4M_MAE_Owner_BaP_FCM_LV2","idm2bcd_B4M_MAE_Owner_BaP_HDEV_LV1","idm2bcd_B4M_MAE_Owner_BaP_HDEV_LV2","idm2bcd_B4M_MAE_Owner_BaP_MFE-ECR_LV1","idm2bcd_B4M_MAE_Owner_BaP_MFE-ECR_LV2","idm2bcd_B4M_MAE_Owner_BaP_Nozzle_LV1","idm2bcd_B4M_MAE_Owner_BaP_Nozzle_LV2","idm2bcd_B4M_MAE_Owner_BaP_PQA_LV1","idm2bcd_B4M_MAE_Owner_BaP_PQA_LV2","idm2bcd_B4M_MAE_Owner_BaP_QMM_LV1","idm2bcd_B4M_MAE_Owner_BaP_QMM_LV2","idm2bcd_B4M_MAE_Owner_BaP_SE_LV1","idm2bcd_B4M_MAE_Owner_BaP_SE_LV2","idm2bcd_B4M_MAE_Owner_BaP_SOFC_LV1","idm2bcd_B4M_MAE_Owner_BaP_SOFC_LV2","idm2bcd_B4M_MAE_Owner_BaP_SP_LV1","idm2bcd_B4M_MAE_Owner_BaP_SP_LV2","idm2bcd_B4M_MAE_Owner_BaP_TEF1_LV1","idm2bcd_B4M_MAE_Owner_BaP_TEF1_LV2","idm2bcd_B4M_MAE_Owner_BaP_TEF2_LV1","idm2bcd_B4M_MAE_Owner_BaP_TEF2_LV2","idm2bcd_B4M_MAE_Owner_BaP_TEF3_LV1","idm2bcd_B4M_MAE_Owner_BaP_TEF3_LV2","idm2bcd_B4M_MAE_PQT_BaP_Actuator","idm2bcd_B4M_MAE_PQT_BaP_CRI2","idm2bcd_B4M_MAE_PQT_BaP_CRI3","idm2bcd_B4M_MAE_PQT_BaP_DLL","idm2bcd_B4M_MAE_PQT_BaP_EIC","idm2bcd_B4M_MAE_PQT_BaP_EV","idm2bcd_B4M_MAE_PQT_BaP_FCEV","idm2bcd_B4M_MAE_PQT_BaP_FCM","idm2bcd_B4M_MAE_PQT_BaP_HDEV","idm2bcd_B4M_MAE_PQT_BaP_MFE-ECR","idm2bcd_B4M_MAE_PQT_BaP_Nozzle","idm2bcd_B4M_MAE_PQT_BaP_PQA","idm2bcd_B4M_MAE_PQT_BaP_QMM","idm2bcd_B4M_MAE_PQT_BaP_SE","idm2bcd_B4M_MAE_PQT_BaP_SOFC","idm2bcd_B4M_MAE_PQT_BaP_SP","idm2bcd_B4M_MAE_PQT_BaP_TEF1","idm2bcd_B4M_MAE_PQT_BaP_TEF2","idm2bcd_B4M_MAE_PQT_BaP_TEF3","idm2bcd_B4M_MAE_Setter_BaP_Actuator","idm2bcd_B4M_MAE_Setter_BaP_CRI2","idm2bcd_B4M_MAE_Setter_BaP_CRI3","idm2bcd_B4M_MAE_Setter_BaP_DLL","idm2bcd_B4M_MAE_Setter_BaP_EIC","idm2bcd_B4M_MAE_Setter_BaP_EV","idm2bcd_B4M_MAE_Setter_BaP_FCEV","idm2bcd_B4M_MAE_Setter_BaP_FCM","idm2bcd_B4M_MAE_Setter_BaP_HDEV","idm2bcd_B4M_MAE_Setter_BaP_MFE-ECR","idm2bcd_B4M_MAE_Setter_BaP_Nozzle","idm2bcd_B4M_MAE_Setter_BaP_PQA","idm2bcd_B4M_MAE_Setter_BaP_QMM","idm2bcd_B4M_MAE_Setter_BaP_SE","idm2bcd_B4M_MAE_Setter_BaP_SOFC","idm2bcd_B4M_MAE_Setter_BaP_SP","idm2bcd_B4M_MAE_Setter_BaP_TEF1","idm2bcd_B4M_MAE_Setter_BaP_TEF2","idm2bcd_B4M_MAE_Setter_BaP_TEF3","idm2bcd_B4M_MAE_Support_Qualisoft_BaP","idm2bcd_B4M_MES-Support_BCI_BaP","idm2bcd_B4M_MES-Support_TEF_BaP","idm2bcd_B4M_Plant_CrossSection_HSE_BaP_LV2","idm2bcd_B4M_Plant_CrossSection_ITM_BaP_LV1","idm2bcd_B4M_Plant_CrossSection_ITM_BaP_LV2","idm2bcd_B4M_Plant_SolutionExpert-Operator_BaP","idm2bcd_B4M_Plant_SolutionExpert-Plant_BaP","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_Actuator","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_CRI2","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_CRI3","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_DLL","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_EIC","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_EV","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_FCEV","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_FCM","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_HDEV","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_HDEV6","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_MFE-ECR","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_Nozzle","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_PQA","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_QMM","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_SE","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_SOFC","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_SP","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_TEF1","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_TEF2","idm2bcd_B4M_Plant_SolutionExpert-ValueStream_BaP_TEF3","idm2bcd_B4M_Service_TEF_BaP_LV1","idm2bcd_B4M_Service_TEF_BaP_LV2","idm2bcd_B4M_TempAccess_Component_BaP","idm2bcd_B4M_MAE-Support_Wiso_BaP")
+# $list_member = @()
+# foreach($group in $list_Group)
+# {
+#     $rootou = "CN=$group,ou=securitygroups,ou=ci-idm2bcd,ou=applications,dc=de,dc=bosch,dc=com"
+#     $Searcher = New-Object DirectoryServices.DirectorySearcher
+#     $Searcher.SearchRoot = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$($rootou)")
+#     try{
+#         $user = $Searcher.FindAll()
+#     }catch{
+#         Write-Host "Group $entry not found" -ForegroundColor Red
+#     }
+#     $list_member += $user.Properties.member
+# }
 
-$test_base64 = [convert]::ToBase64String((Get-Content -Path "C:\Users\TAD6HC\Desktop\report_5_CPU_Ba0VM00298.png" -Encoding byte))
-$test_base64
+# foreach($member in $list_member )
+# {
+#     $rootou = "$member"
+#     $Searcher = New-Object DirectoryServices.DirectorySearcher
+#     $Searcher.SearchRoot = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$($rootou)")
+#     try{
+#         $user = $Searcher.FindAll()
+#     }catch{
+#         Write-Host "Group $entry not found" -ForegroundColor Red
+#     }
+#     write-host $user.Properties.mail
+# }
+# $certificate_properties = Get-ChildItem -Path "Cert:\LocalMachine\My\"
+
+Invoke-Command -ComputerName "BA0VM060.de.bosch.com" -ScriptBlock {[System.Net.Dns]::GetHostByName($env:computerName).HostName} -Credential $Credential
+
+# $csv_content = Import-Csv -Path "\\ba00fb02.de.bosch.com\B4M\Automation\Automation_Script\Thumbprint_Server.csv"
+# $server_name = "BA0VM153.de.bosch.com"
+# foreach($thumbprint in $csv_content)
+# {
+#     if($thumbprint.ServerName -eq $server_name)
+#     {
+#         Write-Host $thumbprint.Thumbprint
+#     }
+# }
+
